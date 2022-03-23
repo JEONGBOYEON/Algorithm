@@ -28,9 +28,9 @@
 
 4. 2~3을 대기열이 비어있을때까지 계속 반복합니다.
 
-![img.png](BFS4.png)
-![img.png](BFS5.png)
-![img_1.png](BFS6.png)
+![img.png](image/BFS4.png)
+![img.png](image/BFS5.png)
+![img_1.png](image/BFS6.png)
 
 ---
 ## BFS pseudocode
