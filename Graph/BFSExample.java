@@ -1,11 +1,11 @@
 import java.util.*;
 
-public class Graph {
+public class BFSExample {
     private int V;
     private LinkedList<Integer> adj[];
 
     // Create a graph
-    Graph(int v) {
+    BFSExample(int v) {
         V = v;
         adj = new LinkedList[v];
         for (int i = 0; i < v; ++i)
@@ -19,6 +19,13 @@ public class Graph {
 
     // BFS algorithm
     void BFS(int s) {
+
+//      visited 배열과 큐를 만들고
+//      1순위 정점을 visited를 ture, 큐에 넣어줌 하고
+//      그리고 큐를 돌려
+//      대기열에서 하나를 빼
+//      그리고 그 list의 데이터에 접근을 해서 만약 visited가 false라면 true로 바꿔주고 Queue에 다시넣어
+
 
         boolean visited[] = new boolean[V];
 
@@ -43,7 +50,7 @@ public class Graph {
     }
 
     public static void main(String args[]) {
-        Graph g = new Graph(4);
+        BFSExample g = new BFSExample(4);
 
         g.addEdge(0, 1);
         g.addEdge(0, 2);
